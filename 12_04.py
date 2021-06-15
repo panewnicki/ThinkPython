@@ -1,6 +1,4 @@
 # -*- coding: utf-8 -*-
-file2 = r'C:\Users\mrasz\Desktop\python_przyklady\113809oftest.fic'
-file = r'C:\Users\mrasz\Desktop\python_przyklady\113809of.fic'
 
 def create_my_dict(text):
     file = open(text)
