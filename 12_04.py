@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 def create_my_dict(text):
     file = open(text)
     my_dict = {}
@@ -8,6 +6,7 @@ def create_my_dict(text):
         word = line.strip()
         word2 = list(word)
         word2.sort()
+        
         dict_key = ""
         for letter in word2:
             dict_key += letter
@@ -25,7 +24,7 @@ def set_of_anagrams(text):
     
     for key, value in d.items():
         if len(value) > 1:
-            print (value)
+            print(value)
 
 #12.4.2.
 def anagrams_dict_sorted(text):
@@ -38,7 +37,7 @@ def anagrams_dict_sorted(text):
             my_list.append(t)
     my_list.sort(reverse=True)
     for length, value in my_list:
-        print(length, value)
+        print(value)
 
 #12.4.3.
 def bingo_list(text):

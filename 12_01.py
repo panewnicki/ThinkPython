@@ -1,6 +1,4 @@
-# -*- coding: utf-8 -*-
-
-# simply code, fail if type(args) == list
+# simply code, fail if type(args) == list or tuple
 def sumall(*args):
 	a = tuple(args)
 	return sum(a)
@@ -10,6 +8,7 @@ def sumall(*args):
 from functools import reduce
 import numpy
 
-def sumall2(*args):
+def sumall_universal(*args):
     b = tuple(reduce(numpy.append, args))
     return sum(b)
+
